@@ -181,6 +181,13 @@ export class Universe {
             wasm.__wbindgen_free(r0, r1);
         }
     }
+    /**
+    * @param {number} row
+    * @param {number} column
+    */
+    toggle_cell(row, column) {
+        wasm.universe_toggle_cell(this.ptr, row, column);
+    }
 }
 
 export function __wbg_alert_fbbeabc2309f67cb(arg0, arg1) {
